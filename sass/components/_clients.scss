@@ -1,0 +1,27 @@
+/* Clients */
+
+.client {
+    @extend %flex-wrap
+}
+
+.client__item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.client__link {
+    @extend %flex-center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--sec-border-color);
+    border-radius: 5px;
+    color: var(--sec-border-color);
+    transition-property: color, border;
+    @extend %trans-dur-time;
+    &:hover,
+        &:focus {color: var(--accent-color);
+            border: 1px solid var(--accent-color);}
+}
+.client__svg {
+    fill: currentColor;
+}
+

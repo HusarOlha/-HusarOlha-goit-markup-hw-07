@@ -1,0 +1,70 @@
+/* Our team */
+
+.team {
+    background-color: var(--background-color);
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.team__list {
+    @extend %flex-wrap;
+}
+.team__item {
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: 0px 4px 4px hex;
+}
+.team__section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.team__title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team__text {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.team__icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+.team__img {
+    flex-basis: calc((100% - 30px) / 4);
+}
+.team__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--sec-border-color);
+    border-radius: 50%;
+    transition-property: color, background-color, border-radius;
+    @extend %trans-dur-time;
+    &:hover,
+        &:focus {
+            color: var(--primary-text-color);
+            background-color: #2196f3;
+            border-radius: 50%;
+        }
+
+}
+.team__svg{
+    fill: currentColor;
+}    

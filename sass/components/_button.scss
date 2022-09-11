@@ -1,0 +1,61 @@
+/* Button */
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: color 250ms, background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__type {
+    color: var(--title-text-color);
+    background-color: var(--background-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+    transition-property: color var(--background-color);
+    @extend %trans-dur-time;
+    &:hover,
+    &:focus {
+        color: var(--background-color);
+        background-color: var(--accent-color);
+    }
+}
+.button__item {
+    margin-right: 8px;
+    &:nth-child(5) {
+            margin-right: 0;
+        }
+}
+.button__type--current {
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+}
+.button__primary {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.form__button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 52px;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.06em;
+}
