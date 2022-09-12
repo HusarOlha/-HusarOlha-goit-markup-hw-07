@@ -342,13 +342,13 @@ img {
 /* Вторинний колір фону #F5F5F5 */
 /* Третій колір фону #F5F4FA */
 /* Сірий колір rgba(255, 255, 255, 0.6) */
-.client, .team__list, .work__list, .feature__list {
+.client, .team__list, .work, .features__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.join__svg, .client__link, .wrap__text, .feature__img, .modal .modal__button {
+.join__svg, .client__link, .wrap__text, .features__img, .modal .modal__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -688,14 +688,14 @@ body {
 }
 
 /* Features */
-.section-features {
+.features {
   padding-top: 94px;
 }
 
-.feature__item {
+.features__item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.feature__item:nth-child(4) {
+.features__item:nth-child(4) {
   margin-right: 0px;
 }
 
@@ -707,7 +707,7 @@ body {
   margin-bottom: 10px;
 }
 
-.feature__img {
+.features__img {
   width: 270px;
   height: 120px;
   border-radius: 50%;
@@ -716,14 +716,14 @@ body {
   margin-bottom: 30px;
 }
 
-.text {
+.features__text {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 
-.title {
+.features__title {
   color: var(--black-color);
   font-size: 14px;
   font-weight: 700;
@@ -871,7 +871,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.button__primary {
+.hero__button {
   color: var(--background-color);
   background-color: var(--accent-color);
   padding: 10px 32px;
