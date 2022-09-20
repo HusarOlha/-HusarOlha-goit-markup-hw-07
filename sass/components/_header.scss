@@ -77,13 +77,13 @@
     background-color: var(--accent-color);
     bottom: 0px;
     left: 0px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &-link--current {
-        color: var(--accent-color);
-            text-decoration: none;
-    }
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // &-link--current {
+    //     color: var(--accent-color);
+    //         text-decoration: none;
+    // }
 }
 .contacts {
     display: flex;
