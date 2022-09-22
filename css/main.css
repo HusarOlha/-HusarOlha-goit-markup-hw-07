@@ -439,6 +439,9 @@ body {
   color: var(--accent-color);
 }
 
+.navigation__link--current {
+  color: var(--accent-color);
+}
 .navigation__link--current::after {
   content: "";
   display: block;
@@ -1056,6 +1059,10 @@ body {
   gap: 10px;
 }
 
+.join {
+  margin-right: auto;
+}
+
 .join__title {
   color: var(--primary-text-color);
   font-family: "Roboto";
@@ -1087,7 +1094,6 @@ body {
 .sign__class {
   display: flex;
   align-items: center;
-  margin-left: 93px;
 }
 
 .sign__title {
@@ -1100,7 +1106,6 @@ body {
   letter-spacing: 0.03em;
   text-align: start;
   margin-bottom: 20px;
-  margin-left: 93px;
 }
 
 .sign__input {

@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+.join {
+    margin-right: auto;
+}
 
 .join__title {
     color: var(--primary-text-color);
@@ -36,8 +39,6 @@
 .sign__class {
     display: flex;
     align-items: center;
-    margin-left: 93px;
-
 }
 .sign__title {
     color: var(--primary-text-color);
@@ -49,7 +50,7 @@
     letter-spacing: 0.03em;
     text-align: start;
     margin-bottom: 20px;
-    margin-left: 93px;
+ 
 }
 .sign__input {
     width: 358px;
