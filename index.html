@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -51,11 +52,16 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"> 
+          <svg width="40" height="40">
+             <use href="./images/images.svg#icon-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
@@ -139,7 +145,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Переваги -->
       <section class="features">
         <div class="container">
@@ -195,11 +201,11 @@
           </ul>
         </div>
       </section>
-      <!-- Work -->
-      <section class="section">
+     <!-- Work -->
+      <section class="work">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="work">
+          <h2 class="work__title">Чим ми займаємося</h2>
+          <ul class="work__list">
             <li class="work__item">
               <div class="work__wrap">
                 <img
@@ -242,7 +248,7 @@
           <h2 class="section-title list">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
+              <img class="team-list__photo"
                 src="images/team1.jpg"
                 alt="Перший член команди"
                 width="270"
@@ -300,7 +306,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
+              <img class="team-list__photo"
                 src="images/team2.jpg"
                 alt="Другий член команди"
                 width="270"
@@ -358,7 +364,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
+              <img class="team-list__photo"
                 src="images/team3.jpg"
                 alt="Третій член команди"
                 width="270"
@@ -416,7 +422,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
+              <img class="team-list__photo"
                 src="images/team4.jpg"
                 alt="Четвертий член команди"
                 width="270"
@@ -476,7 +482,7 @@
           </ul>
         </div>
       </section>
-      <!-- Clients -->
+       <!-- Clients -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
@@ -527,7 +533,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container container-footer">
         <div class="footer-logo">
           <a href="" class="footer-logo__text">
@@ -636,6 +642,59 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+   <div class="menu-container js-menu-container" id="mobile-menu">
+        <nav class="menu">
+          <ul class="menu-navigation">
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link menu-navigation__link--current" href="#"
+                >Студія</a
+              >
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            
+          </li>
+          <li class="menu-contacts__item--email">
+            <a class="menu-contacts__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu-link">
+          <li class="menu-link__socials">
+            <a href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="menu-link__socials">
+            <a href="https://twitter.com/?lang=uk">Twitter</a>
+          </li>
+          <li class="menu-link__socials">
+            <a href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="menu-link__socials">
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+          </li>
+        </ul>
+        <button type="button" class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu"> 
+          <svg class="menu-toggle__svg"width="40" height="40">
+             <use href="./images/images.svg#icon-close"></use>
+          </svg>
+        </button>
+        </div>
+         <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script> 
     <script src="./js/modal.js"></script>
   </body>
 </html>

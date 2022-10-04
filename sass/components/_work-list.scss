@@ -1,8 +1,37 @@
 /* Work */
-
 .work {
+   padding-top: 94px;
+}
+.work__list {
+    display: none;
+    @media screen and (min-width: 1200px){
+       display: flex; 
+    }
     @extend %flex-wrap;
 }
+.work__title {
+    color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        display: none;
+        
+            @media screen and (min-width: 1200px) {
+                display: block;
+            }
+    
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.16;
+        }
+    }
+
 .work__item {
     flex-basis: calc((100% - 60px) / 3);
 }

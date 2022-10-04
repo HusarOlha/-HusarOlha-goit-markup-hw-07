@@ -1,16 +1,26 @@
 /* Clients */
 
 .client {
-    @extend %flex-wrap
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .client__item {
-    flex-basis: calc((100% - 150px) / 6);
+    @media screen and (max-width: 767px) {
+            flex-basis: calc((100% - 60px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+           flex-basis: calc((100% - 150px) / 6);
+    }
 }
 
 .client__link {
-    @extend %flex-center;
-    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 92px;
     border: 1px solid var(--sec-border-color);
     border-radius: 5px;
@@ -20,6 +30,16 @@
     &:hover,
         &:focus {color: var(--accent-color);
             border: 1px solid var(--accent-color);}
+         @media screen and (max-width: 767px) {
+            width: 210px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
+
 }
 .client__svg {
     fill: currentColor;
